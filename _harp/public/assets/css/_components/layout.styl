@@ -13,8 +13,8 @@
 // --------------------------------------------------
 .container
   margin 0 30px
-  max-width 960px
-  @media screen and (min-width: 1020px)
+  max-width 980px
+  @media screen and (min-width: 1040px)
     margin 0 auto
 
 // ----- Grid Variables ----- //
@@ -31,6 +31,7 @@ col-gutter       = 30px
     padding-left (col-gutter/2)
     padding-right (col-gutter/2)
     float left
+    position relative // In order to push/pull classes to take effect
     + .col
       margin-top 0
 
@@ -49,6 +50,32 @@ col-gutter       = 30px
     @extends .col--1of2
   .col--3of4
     width 75%
+
+  .push--1of2
+    left 50%
+  .push--1of3
+    left 66.666%
+  .push--2of3
+    left 33.333%
+  .push--1of4
+    left 75%
+  .push--2of4
+    @extends .push--1of2
+  .push--3of4
+    left 25%
+
+  .pull--1of2
+    right 50%
+  .pull--1of3
+    right 66.666%
+  .pull--2of3
+    right 33.333%
+  .pull--1of4
+    right 75%
+  .pull--2of4
+    @extends .pull--1of2
+  .pull--3of4
+    right 25%
 
 .panels
   //
