@@ -1,7 +1,7 @@
 {
   "domains": [""],
   "globals": {
-    "site_title": "Harp Boilerplate",
+    "site_title": "The Variable",
     "twitter": "",
     "base_url": "/"
   }

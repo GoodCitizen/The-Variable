@@ -12,17 +12,16 @@
 
     <!-- CSS
     ================================================== -->
+    <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Vollkorn:400italic|Open+Sans:300|Montserrat:700'>
     <link rel="stylesheet" href="<%= base_url %>assets/css/app.css">
 
   </head>
-  <body class="page-<%- current.path[0] %>">
+  <body class="page page-<%- current.path[0] %>">
     <!--[if lt IE 8]>
       <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
-
     <%- yield %>
-
 
     <!-- JS
     ================================================== -->
