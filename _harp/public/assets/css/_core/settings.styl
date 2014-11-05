@@ -53,6 +53,15 @@ link-hover-color      = darken(link-color, 15%)
 // --------------------------------------------------
 //   TYPOGRAPHY
 // --------------------------------------------------
+@font-face
+  font-family 'Nevis Bold'
+  src  url('/assets/fonts/nevis/Nevis-Bold.ttf.woff') format('woff'),
+       url('/assets/fonts/nevis/Nevis-Bold.ttf.svg#Nevis-Bold') format('svg'),
+       url('/assets/fonts/nevis/Nevis-Bold.ttf.eot'),
+       url('/assets/fonts/nevis/Nevis-Bold.eot?#iefix') format('embedded-opentype')
+  font-weight normal
+  font-style normal
+
 // Font stacks
 helvetica-neue        = "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif
 helvetica             = Helvetica, Arial, sans-serif
@@ -60,6 +69,7 @@ georgia               = Georgia, Cambria, "Times New Roman", Times, serif
 lucida-grande         = "Lucida Grande", Tahoma, Verdana, Arial, sans-serif
 code                  = Consolas, "Liberation Mono", Courier, monospace;
 verdana               = Verdana, Geneva, sans-serif
+nevis                 = "Nevis Bold", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif
 montserrat            = "Montserrat", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif
 open-sans             = "Open Sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif
 volkorn               = "Volkorn", Georgia, Cambria, "Times New Roman", Times, serif
@@ -72,8 +82,8 @@ line-height-base      = 1.5
 margin-bottom-base    = unit(font-size-base * line-height-base, px)
 
 // Headings font
-headings-font-family  = montserrat
-headings-font-weight  = 700
+headings-font-family  = nevis
+headings-font-weight  = normal
 h1-size               = 36px
 h2-size               = 30px
 h3-size               = 24px
