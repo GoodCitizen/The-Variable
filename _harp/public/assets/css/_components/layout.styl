@@ -9,16 +9,17 @@
 
 
 // --------------------------------------------------
-//   GENERIC CONTAINER
+//   GRID
 // --------------------------------------------------
-.container
-  margin 0 30px
-  max-width 980px
-  @media screen and (min-width: 1040px)
-    margin 0 auto
 
 // ----- Grid Variables ----- //
 col-gutter       = 30px
+
+.container
+  margin 0 30px
+  max-width 980px
+  @media (min-width: 1040px)
+    margin 0 auto
 
 .row
   @extends .group
@@ -28,7 +29,7 @@ col-gutter       = 30px
   padding-right (col-gutter)
   + .col
     margin-top 0.625em
-  @media screen and (min-width: 43.75em)
+  @media (min-width: 43.75em)
     padding-left (col-gutter/2)
     padding-right (col-gutter/2)
     float left
@@ -36,7 +37,7 @@ col-gutter       = 30px
     + .col
       margin-top 0
 
-@media screen and (min-width: 43.75em)
+@media (min-width: 43.75em)
   .col--1of1
     width 100%
   .col--1of2
@@ -77,57 +78,3 @@ col-gutter       = 30px
     @extends .pull--1of2
   .pull--3of4
     right 25%
-
-.panels
-  //
-
-.panel
-  &.has-bg
-    background brand-gray-light
-
-.panel-collection
-  @extends .row
-  padding 50px 0
-  &.panel-collection--centered
-    margin 0 auto
-    max-width 980px
-  &.panel-collection--narrow
-    margin 0 auto
-    max-width 720px
-  &.panel-collection--full
-    padding 0
-
-.panel-col
-  @extends .col
-
-@media screen and (min-width: 43.75em)
-  .panel-col--1of1
-    @extends .col--1of1
-  .panel-col--1of2
-    @extends .col--1of2
-  .panel-col--1of3
-    @extends .col--1of3
-  .panel-col--2of3
-    @extends .col--2of3
-  .panel-col--1of4
-    @extends .col--1of4
-  .panel-col--2of4
-    @extends .col--2of4
-  .panel-col--3of4
-    @extends .col--3of4
-
-.panel-content
-  .panel-collection--narrow &
-    text-align center
-
-.panel-media
-  //
-
-.panel-media--full
-  padding 15% 0
-  overflow hidden
-  background-repeat no-repeat
-  background-position center center
-  background-size cover
-  @media screen and (min-width: 43.75em)
-    height 450px

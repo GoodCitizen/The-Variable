@@ -1,0 +1,111 @@
+// --------------------------------------------------
+//
+//   PROJECTS PAGE TEMPLATE
+//
+// --------------------------------------------------
+
+
+
+
+
+// --------------------------------------------------
+//   HERO
+// --------------------------------------------------
+.project-hero
+  //
+
+.project-hero-container
+  height 240px
+  height 40vh
+  overflow hidden
+  background-repeat no-repeat
+  background-position center center
+  background-size cover
+  @media (min-width: 43.75em)
+    height 725px
+    height 80vh
+
+
+// --------------------------------------------------
+//   PANELS
+// --------------------------------------------------
+.panels
+  //
+
+.panel
+  &.has-bg
+    background brand-gray-light
+
+.panel-collection
+  @extends .row
+  padding 30px 0
+  &.panel-collection--centered
+    margin 0 auto
+    max-width 980px
+  &.panel-collection--narrow
+    margin 0 auto
+    max-width 720px
+  &.panel-collection--full
+    padding 0
+  @media (min-width: 43.75em)
+    padding 50px 0
+
+.panel-col
+  @extends .col
+
+@media (min-width: 43.75em)
+  .panel-col--1of1
+    @extends .col--1of1
+  .panel-col--1of2
+    @extends .col--1of2
+  .panel-col--1of3
+    @extends .col--1of3
+  .panel-col--2of3
+    @extends .col--2of3
+  .panel-col--1of4
+    @extends .col--1of4
+  .panel-col--2of4
+    @extends .col--2of4
+  .panel-col--3of4
+    @extends .col--3of4
+
+// --------------------------------------------------
+//   PANEL INTRO, CONTENT & MEDIA
+// --------------------------------------------------
+.panel-intro
+  .panel-collection--narrow &
+    text-align center
+  .project-disciplines
+    margin 0 auto 10px
+    width 50%
+    line-height 1.15
+  .project-discipline
+    font-family nevis
+    font-size 12px
+    letter-spacing .15em
+    text-transform uppercase
+  .project-title
+    margin-bottom 20px
+    font-size 24px
+    letter-spacing .15em
+  .project-description
+    margin-bottom 0
+    font-size 12px
+
+.panel-content
+  p
+    font-size 12px
+  .panel-collection--narrow &
+    text-align center
+
+.panel-media
+  //
+
+.panel-media--full
+  padding 25% 0
+  overflow hidden
+  background-repeat no-repeat
+  background-position center center
+  background-size cover
+  @media (min-width: 43.75em)
+    height 450px
