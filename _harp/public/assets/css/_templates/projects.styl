@@ -173,3 +173,60 @@
   @media (min-width: 43.75em)
     // padding 0
     // height 750px
+
+// --------------------------------------------------
+//   CAROUSELS (SLIDES)
+// --------------------------------------------------
+.slides
+  margin-bottom 60px
+
+.slide
+  //
+
+.slide-media
+  img
+    width 100%
+
+.slide-content
+  margin 60px auto 0
+  max-width 950px
+  clearfix()
+
+.slide-description
+  margin-bottom 0
+  width calc(100% \- 260px)
+  float left
+  font-size 18px
+  font-weight 300
+
+.slide-count
+  width 85px
+  height 85px
+  float right
+  position relative
+  font-size 28px
+  font-weight 300
+  line-height 1
+  &:after
+    content ''
+    width 1px
+    height 120px
+    display block
+    position absolute
+    top -18px
+    left 50%
+    background brand-gray
+    transform rotate(45deg)
+
+.slide-current,
+.slide-total
+  display inline-block
+  position absolute
+
+.slide-current
+  top 0
+  left 0
+
+.slide-total
+  bottom 0
+  right 0
