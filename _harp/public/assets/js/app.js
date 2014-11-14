@@ -9,7 +9,15 @@ $(function() {
     centerPadding: '60px',
     arrows: true,
     focusOnSelect: true,
-    slidesToShow: 1
+    slidesToShow: 1,
+    responsive: [
+    {
+      breakpoint: 480,
+      settings: {
+        centerPadding: '30px'
+      }
+    }
+  ]
   });
 
 });

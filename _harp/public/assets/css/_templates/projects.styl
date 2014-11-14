@@ -178,47 +178,68 @@
 //   CAROUSELS (SLIDES)
 // --------------------------------------------------
 .slides
-  margin-bottom 60px
+  margin-bottom 30px
+  @media (min-width: 43.75em)
+    margin-bottom 60px
 
 .slide
   //
 
 .slide-media
-  img
-    margin 0 auto
-    width 100%
-    width 98%
+  padding 25% 0
+  // padding-top 26.47% // To keep aspect ratio of images intact: 450/1700 = .264705882
+  width 96%
+  background-repeat no-repeat
+  background-position center
+  background-size cover
+  @media (min-width: 43.75em)
+    padding 0
+    height 450px
 
 .slide-content
-  margin 60px auto 0
+  margin 30px auto 0
   max-width 950px
   clearfix()
+  @media (min-width: 43.75em)
+    margin 60px auto 0
 
 .slide-description
   margin-bottom 0
   width calc(100% \- 260px)
-  float left
+  display none
   font-size 18px
   font-weight 300
+  @media (min-width: 43.75em)
+    display block
+    float left
 
 .slide-count
-  width 85px
-  height 85px
-  float right
+  margin 0 auto
+  width 50px
+  height 50px
   position relative
-  font-size 28px
+  font-size 18px
   font-weight 300
   line-height 1
   &:after
     content ''
     width 1px
-    height 120px
+    height 70px
     display block
     position absolute
-    top -18px
+    top -10px
     left 50%
     background brand-gray
     transform rotate(45deg)
+  @media (min-width: 43.75em)
+    margin 0
+    width 85px
+    height 85px
+    float right
+    font-size 28px
+    &:after
+      height 120px
+      top -18px
 
 .slide-current,
 .slide-total
