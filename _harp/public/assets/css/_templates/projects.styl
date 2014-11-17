@@ -143,10 +143,12 @@
 
 .panel-video--full
   padding-top 44.11% // To keep aspect ratio of images intact: 750/1700 = .441176471
-  position relative // For positioning video play icon and video iframe
-  background-repeat no-repeat
-  background-position center
-  background-size cover
+  position relative // For positioning poster image, video play icon and video iframe
+  img
+    width 100%
+    position absolute
+    top 0
+    left 0
   .video-icon
     margin-top -24px
     margin-left -24px
@@ -169,8 +171,7 @@
       top 0
       left 0
   @media (min-width: 43.75em)
-    // padding 0
-    // height 750px
+    //
 
 // --------------------------------------------------
 //   CAROUSELS (SLIDES)
