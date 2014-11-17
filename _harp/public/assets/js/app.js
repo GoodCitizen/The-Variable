@@ -7,7 +7,7 @@ $(function() {
   $('.slides--full').slick({
     centerMode: true,
     centerPadding: '60px',
-    arrows: true,
+    arrows: false,
     focusOnSelect: true,
     slidesToShow: 1,
     responsive: [
