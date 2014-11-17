@@ -15,17 +15,15 @@
   //
 
 .project-hero-container
-  height 240px
-  height 40vh
-  overflow hidden
-  background-repeat no-repeat
-  background-position center center
-  background-size cover
+  padding-top 44.11% // To keep aspect ratio of images intact: 750/1700 = .441176471
+  position relative
+  img
+    width 100%
+    position absolute
+    top 0
+    left 0
   @media (min-width: 43.75em)
-    // height 750px
-    // height 80vh
-    // max-height 750px
-    padding-top 41.12%
+    //
 
 // --------------------------------------------------
 //   PANELS, PANEL & PANEL COLLECTION
@@ -183,35 +181,49 @@
     margin-bottom 60px
 
 .slide
-  //
+  &.slick-slide
+    cursor pointer
+  &.slick-active
+    cursor initial
 
 .slide-media
-  padding 25% 0
-  // padding-top 26.47% // To keep aspect ratio of images intact: 450/1700 = .264705882
-  width 96%
-  background-repeat no-repeat
-  background-position center
-  background-size cover
-  @media (min-width: 43.75em)
-    padding 0
-    height 450px
+  margin 0 2% // Create gap between carousel slides
+  overflow hidden
+  img
+    margin-left -50%
+    max-width none
+    width 180%
+  @media (min-width: 63.75em)
+    margin 0 1% // Create gap between carousel slides
+    img
+      margin-left 0
+      width 100%
 
 .slide-content
   margin 30px auto 0
-  max-width 950px
   clearfix()
   @media (min-width: 43.75em)
+    width 80%
+  @media (min-width: 48em)
     margin 60px auto 0
+  @media (min-width: 63.75em)
+    max-width 950px
 
 .slide-description
-  margin-bottom 0
-  width calc(100% \- 260px)
   display none
-  font-size 18px
-  font-weight 300
   @media (min-width: 43.75em)
+    margin-bottom 0
+    width calc(100% \- 140px)
     display block
     float left
+    font-size 14px
+    font-weight 300
+  @media (min-width: 56.25em)
+    width calc(100% \- 200px)
+    font-size 16px
+  @media (min-width: 63.75em)
+    width calc(100% \- 260px)
+    font-size 18px
 
 .slide-count
   margin 0 auto
