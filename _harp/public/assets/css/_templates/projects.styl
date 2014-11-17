@@ -132,14 +132,15 @@
         width 100%
 
 .panel-media--full
-  padding 25% 0
-  // padding-top 26.47% // To keep aspect ratio of images intact: 450/1700 = .264705882
-  background-repeat no-repeat
-  background-position center
-  background-size cover
+  padding-top 26.47% // To keep aspect ratio of images intact: 450/1700 = .264705882
+  position relative
+  img
+    width 100%
+    position absolute
+    top 0
+    left 0
   @media (min-width: 43.75em)
-    padding 0
-    height 450px
+    //
 
 .panel-video--full
   padding-top 44.11% // To keep aspect ratio of images intact: 750/1700 = .441176471
