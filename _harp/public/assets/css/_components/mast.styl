@@ -9,7 +9,45 @@
 
 
 .mast-wrapper
-  //
+  background #fff
 
 .mast
+  padding 10px 0
+  clearfix()
+
+.brand
   //
+
+.hamburger
+  width 31px
+  height 20px
+  display block
+  float right
+  position relative
+  z-index 100
+  span
+    width 100%
+    height 4px
+    display block
+    position absolute
+    top 40%
+    background #000
+    transition all .2s ease-out
+
+.bun--top,
+.bun--bottom
+  //
+
+.bun--top
+  transform translateY(-8px)
+
+.bun--bottom
+  transform translateY(8px)
+
+.hamburger.is-open
+  .meat
+    background transparent
+  .bun--top
+    transform translateY(0) rotate(45deg)
+  .bun--bottom
+    transform translateY(0) rotate(-45deg)
