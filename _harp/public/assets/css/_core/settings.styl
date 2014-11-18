@@ -48,12 +48,22 @@ link-hover-color      = darken(link-color, 15%)
 //   TYPOGRAPHY
 // --------------------------------------------------
 @font-face
-  font-family 'Nevis Bold'
-  src  url('/assets/fonts/nevis/Nevis-Bold.ttf.woff') format('woff'),
-       url('/assets/fonts/nevis/Nevis-Bold.ttf.svg#Nevis-Bold') format('svg'),
-       url('/assets/fonts/nevis/Nevis-Bold.ttf.eot'),
-       url('/assets/fonts/nevis/Nevis-Bold.eot?#iefix') format('embedded-opentype')
-  font-weight normal
+  font-family "Nevis"
+  src  url("/assets/fonts/nevis/Nevis-Bold.ttf.eot")
+  src  url("/assets/fonts/nevis/Nevis-Bold.ttf.eot?#iefix") format("embedded-opentype"),
+       url("/assets/fonts/nevis/Nevis-Bold.ttf.woff") format("woff"),
+       url("/assets/fonts/nevis/Nevis-Bold.ttf.svg#Nevis") format("svg")
+  font-weight bold
+  font-style normal
+
+@font-face
+  font-family "Sentinel"
+  src  url("/assets/fonts/sentinel/Sentinel-Book-webfont.eot")
+  src  url("/assets/fonts/sentinel/Sentinel-Book-webfont.eot?#iefix") format("embedded-opentype"),
+       url("/assets/fonts/sentinel/Sentinel-Book-webfont.woff") format("woff"),
+       url("/assets/fonts/sentinel/Sentinel-Book-webfont.ttf") format("truetype"),
+       url("/assets/fonts/sentinel/Sentinel-Book-webfont.svg#Sentinel") format("svg")
+  font-weight 400
   font-style normal
 
 // Font stacks
@@ -63,10 +73,10 @@ georgia               = Georgia, Cambria, "Times New Roman", Times, serif
 lucida-grande         = "Lucida Grande", Tahoma, Verdana, Arial, sans-serif
 code                  = Consolas, "Liberation Mono", Courier, monospace;
 verdana               = Verdana, Geneva, sans-serif
-nevis                 = "Nevis Bold", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif
-montserrat            = "Montserrat", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif
+nevis                 = "Nevis", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif
 open-sans             = "Open Sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif
 volkorn               = "Volkorn", Georgia, Cambria, "Times New Roman", Times, serif
+sentinel              = "Sentinel", "Volkorn", Georgia, Cambria, "Times New Roman", Times, serif
 
 // Base font
 font-family-base      = open-sans
