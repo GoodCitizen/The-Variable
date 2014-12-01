@@ -12,7 +12,8 @@
 //   SECRET SAUCE
 // --------------------------------------------------
 .secret-sauce-wrapper
-  background #000 url(/assets/img/bg-secret-sauce-wrapper.png) left bottom repeat-x
+  // background #000 url(/assets/img/bg-secret-sauce-wrapper.png) left bottom repeat-x
+  background #000
 
 .secret-sauce
   text-align center
@@ -44,6 +45,17 @@
       left 50%
       background #000
       border-radius 35px 35px 0 0
+  @media (min-width: 56.25em)
+    a
+      padding 20px 0
+      font-size 22px
+      &:before
+        margin-left -48px
+        padding-top 15px
+        width 96px
+        height 48px
+        top -30px
+        border-radius 48px 48px 0 0
 
 // --------------------------------------------------
 //   ALL SECTIONS
@@ -80,6 +92,8 @@
     &:after
       content url(/assets/img/bg-section-title-after-sm.png)
       right -55px
+  @media (min-width: 30em)
+    font-size 20px
 
 .section-blurb
   margin 0 0 40px
@@ -89,6 +103,8 @@
   font-style italic
   line-height 1.3
   text-align center
+  @media (min-width: 30em)
+    font-size 14px
 
 // --------------------------------------------------
 //   PROJECTS
@@ -109,7 +125,7 @@
 
 .client
   margin 0
-  padding 2.5%
+  padding 3.5%
   width 33.3333%
   float left
 
@@ -142,7 +158,7 @@
   cursor pointer
   img
     max-width 100%
-    min-height 100%
+    // min-height 100%
     display block
     position relative
   figcaption
@@ -151,15 +167,16 @@
     height 100%
     position absolute
     top 0
-    left 0
+    left 100%
     text-align center
     color #fff
     background rgba(0,0,0,.85)
     opacity 0
     cursor pointer
-    transition opacity .25s ease-in-out
+    transition all .25s ease-in-out
   &:hover
     figcaption
+      left 0
       opacity 1
   .staff-name
     margin 0 0 10px

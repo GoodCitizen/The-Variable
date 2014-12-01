@@ -17,7 +17,14 @@
 .hero
   padding 70px 0 50px
   background url(/assets/img/bg-hero.png) 50% 12% no-repeat
-  background-size 25px 15px
+  background-size 25px 14px
+  @media (min-width: 43.75em)
+    padding 110px 0 70px
+    background-size 60px 34px
+  @media (min-width: 56.25em)
+    padding 170px 0 100px
+    background-size 80px 45px
+    background-position 50% 9%
 
 .hero-blurbs
   //
@@ -29,6 +36,15 @@
   line-height 1.25
   text-transform none
   text-align center
+  @media (min-width: 30em)
+    font-size 28px
+  @media (min-width: 43.75em)
+    margin 0 0 30px
+    font-size 58px
+    line-height 1
+  @media (min-width: 56.25em)
+    margin 0 0 40px
+    font-size 88px
 
 .hero-blurb-badge
   margin-bottom 20px
@@ -52,7 +68,7 @@
   &:after
     content ''
     display block
-    width 31%
+    width calc(50% \- 55px)
     height 1px
     position absolute
     top calc(50% \- 1px)
@@ -61,6 +77,24 @@
   &:after
     left auto
     right 0
+  @media (min-width: 43.75em)
+    margin-bottom 30px
+  @media (min-width: 56.25em)
+    margin-bottom 40px
+    height 51px
+    span
+      width 114px
+      height 51px
+      font-size 20px
+      line-height 51px
+      background-size 114px 51px
+    &:before,
+    &:after
+      width 35%
+      left 6%
+    &:after
+      left auto
+      right 6%
 
 .hero-tagline
   margin 0
@@ -71,3 +105,11 @@
   line-height 1.3
   text-transform none
   text-align center
+  @media (min-width: 30em)
+    font-size 14px
+  @media (min-width: 43.75em)
+    font-size 20px
+  @media (min-width: 56.25em)
+    margin 0 auto
+    width 90%
+    font-size 26px
