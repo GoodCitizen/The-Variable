@@ -82,30 +82,18 @@
     <h2 class="section-title">Our<br><em>Experience</em></h2>
     <p class="section-blurb">As a wearer of many hats, we have played many different roles for some of our favorite brands; from data analysis to strategic development to creative execution. Most often, all of the above. But never less than game-changing.</p>
     <div class="clients">
-      <figure class="client"><img src="http://placehold.it/500x500" alt="Client Logo"></figure> <!-- /.client -->
-      <figure class="client"><img src="http://placehold.it/500x500" alt="Client Logo"></figure> <!-- /.client -->
-      <figure class="client"><img src="http://placehold.it/500x500" alt="Client Logo"></figure> <!-- /.client -->
-      <figure class="client"><img src="http://placehold.it/500x500" alt="Client Logo"></figure> <!-- /.client -->
-      <figure class="client"><img src="http://placehold.it/500x500" alt="Client Logo"></figure> <!-- /.client -->
-      <figure class="client"><img src="http://placehold.it/500x500" alt="Client Logo"></figure> <!-- /.client -->
-      <figure class="client"><img src="http://placehold.it/500x500" alt="Client Logo"></figure> <!-- /.client -->
-      <figure class="client"><img src="http://placehold.it/500x500" alt="Client Logo"></figure> <!-- /.client -->
-      <figure class="client"><img src="http://placehold.it/500x500" alt="Client Logo"></figure> <!-- /.client -->
-      <figure class="client"><img src="http://placehold.it/500x500" alt="Client Logo"></figure> <!-- /.client -->
-      <figure class="client"><img src="http://placehold.it/500x500" alt="Client Logo"></figure> <!-- /.client -->
-      <figure class="client"><img src="http://placehold.it/500x500" alt="Client Logo"></figure> <!-- /.client -->
-      <figure class="client"><img src="http://placehold.it/500x500" alt="Client Logo"></figure> <!-- /.client -->
-      <figure class="client"><img src="http://placehold.it/500x500" alt="Client Logo"></figure> <!-- /.client -->
-      <figure class="client"><img src="http://placehold.it/500x500" alt="Client Logo"></figure> <!-- /.client -->
-      <figure class="client"><img src="http://placehold.it/500x500" alt="Client Logo"></figure> <!-- /.client -->
-      <figure class="client"><img src="http://placehold.it/500x500" alt="Client Logo"></figure> <!-- /.client -->
-      <figure class="client"><img src="http://placehold.it/500x500" alt="Client Logo"></figure> <!-- /.client -->
-      <figure class="client"><img src="http://placehold.it/500x500" alt="Client Logo"></figure> <!-- /.client -->
-      <figure class="client"><img src="http://placehold.it/500x500" alt="Client Logo"></figure> <!-- /.client -->
-      <figure class="client"><img src="http://placehold.it/500x500" alt="Client Logo"></figure> <!-- /.client -->
-      <figure class="client"><img src="http://placehold.it/500x500" alt="Client Logo"></figure> <!-- /.client -->
-      <figure class="client"><img src="http://placehold.it/500x500" alt="Client Logo"></figure> <!-- /.client -->
-      <figure class="client"><img src="http://placehold.it/500x500" alt="Client Logo"></figure> <!-- /.client -->
+      <% for(var i=0; i<24; i++) {%>
+       <figure class="client">
+         <img
+         	srcset="http://placehold.it/600x600  600w,
+         	        http://placehold.it/300x300  300w,
+         	        http://placehold.it/150x150  150w"
+         	sizes="(min-width: 56.25em) 25vw,
+         	       33.3333vw"
+         	src="http://placehold.it/300x300"
+         	alt="A client logo.">
+       </figure>
+      <% } %>
     </div> <!-- /.clients -->
   </section> <!-- /.experience container -->
 </div> <!-- /.experience-wrapper -->
