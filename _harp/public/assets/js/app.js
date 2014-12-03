@@ -8,11 +8,7 @@ $(function() {
 
   // Project list parallax
   if ($(window).width()>980 && !Modernizr.touch) {
-    $.stellar({
-      horizontalOffset: 50,
-      verticalOffset: 40,
-      positionProperty: 'transform'
-    });
+    
   }
 
   // Project videos
