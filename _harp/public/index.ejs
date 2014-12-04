@@ -85,9 +85,9 @@
       <% for(var i=0; i<24; i++) {%>
        <figure class="client">
          <img
-         	srcset="http://placehold.it/600x600  600w,
-         	        http://placehold.it/300x300  300w,
-         	        http://placehold.it/150x150  150w"
+         	srcset="http://placehold.it/600x600 600w,
+         	        http://placehold.it/300x300 300w,
+         	        http://placehold.it/150x150 150w"
          	sizes="(min-width: 56.25em) 25vw,
          	       33.3333vw"
          	src="http://placehold.it/300x300"
@@ -102,88 +102,106 @@
   <section class="people">
     <h2 class="section-title">Our<br><em>People</em></h2>
     <p class="section-blurb">We wear weird like a badge. Our goal is to get the most disparate, brilliant thinkers we can find and unleash their creativity on your brand. Here is who we are.</p>
-    <div class="staff-grid">
-      <figure class="staff">
-        <img src="/assets/img/pic-staff-joe.jpg" alt="Joe Parrish">
+    <div class="people-grid">
+      <% for(var i=0; i<5; i++) {%>
+       <figure class="person">
+         <img
+         	srcset="http://placehold.it/800x800 800w,
+         	        http://placehold.it/400x400 400w,
+         	        http://placehold.it/200x200 200w"
+         	sizes="(min-width: 56.25em) 20vw,
+                 (min-width: 48em) 25vw,
+         	       33.3333vw"
+         	src="http://placehold.it/100x100"
+         	alt="Joe Parrish">
+         <figcaption>
+           <h3 class="person-name">Joe<br>Parrish</h3>
+           <p class="person-title">Creative Director</p>
+           <p class="person-hometown">Hometown, NC</p>
+         </figcaption>
+       </figure> <!-- /.person -->
+      <% } %>
+      <figure class="person">
+        <img src="/assets/img/pic-person-joe.jpg" alt="Joe Parrish">
         <figcaption>
-          <h3 class="staff-name">Joe<br>Parrish</h3>
-          <p class="staff-title">Creative Director</p>
-          <p class="staff-hometown">Hometown, NC</p>
+          <h3 class="person-name">Joe<br>Parrish</h3>
+          <p class="person-title">Creative Director</p>
+          <p class="person-hometown">Hometown, NC</p>
         </figcaption>
-      </figure> <!-- /.staff -->
-      <figure class="staff">
-        <img src="/assets/img/pic-staff-david.jpg" alt="David Jones">
+      </figure> <!-- /.person -->
+      <figure class="person">
+        <img src="/assets/img/pic-person-david.jpg" alt="David Jones">
         <figcaption>
-          <h3 class="staff-name">David<br>Jones</h3>
-          <p class="staff-title">Assoc. Creative Director</p>
-          <p class="staff-hometown">Hometown, NC</p>
+          <h3 class="person-name">David<br>Jones</h3>
+          <p class="person-title">Assoc. Creative Director</p>
+          <p class="person-hometown">Hometown, NC</p>
         </figcaption>
-      </figure> <!-- /.staff -->
-      <figure class="staff">
-        <img src="/assets/img/pic-staff-gary.jpg" alt="Gary Bostwick">
+      </figure> <!-- /.person -->
+      <figure class="person">
+        <img src="/assets/img/pic-person-gary.jpg" alt="Gary Bostwick">
         <figcaption>
-          <h3 class="staff-name">Gary<br>Bostwick</h3>
-          <p class="staff-title">Senior Copywriter</p>
-          <p class="staff-hometown">Cleveland, OH</p>
+          <h3 class="person-name">Gary<br>Bostwick</h3>
+          <p class="person-title">Senior Copywriter</p>
+          <p class="person-hometown">Cleveland, OH</p>
         </figcaption>
-      </figure> <!-- /.staff -->
-      <figure class="staff">
-        <img src="/assets/img/pic-staff-ashley.jpg" alt="Ashley">
+      </figure> <!-- /.person -->
+      <figure class="person">
+        <img src="/assets/img/pic-person-ashley.jpg" alt="Ashley">
         <figcaption>
-          <h3 class="staff-name">Ashley<br>Lastname</h3>
-          <p class="staff-title">Account Executive</p>
-          <p class="staff-hometown">Hometown, NC</p>
+          <h3 class="person-name">Ashley<br>Lastname</h3>
+          <p class="person-title">Account Executive</p>
+          <p class="person-hometown">Hometown, NC</p>
         </figcaption>
-      </figure> <!-- /.staff -->
-      <figure class="staff">
-        <img src="/assets/img/pic-staff-anna.jpg" alt="Anna">
+      </figure> <!-- /.person -->
+      <figure class="person">
+        <img src="/assets/img/pic-person-anna.jpg" alt="Anna">
         <figcaption>
-          <h3 class="staff-name">Anna<br>Church</h3>
-          <p class="staff-title">Account Executive</p>
-          <p class="staff-hometown">Hometown, NC</p>
+          <h3 class="person-name">Anna<br>Church</h3>
+          <p class="person-title">Account Executive</p>
+          <p class="person-hometown">Hometown, NC</p>
         </figcaption>
-      </figure> <!-- /.staff -->
-      <figure class="staff">
-        <img src="/assets/img/pic-staff-joe.jpg" alt="Joe Parrish">
+      </figure> <!-- /.person -->
+      <figure class="person">
+        <img src="/assets/img/pic-person-joe.jpg" alt="Joe Parrish">
         <figcaption>
-          <h3 class="staff-name">Joe<br>Parrish</h3>
-          <p class="staff-title">Creative Director</p>
-          <p class="staff-hometown">Hometown, NC</p>
+          <h3 class="person-name">Joe<br>Parrish</h3>
+          <p class="person-title">Creative Director</p>
+          <p class="person-hometown">Hometown, NC</p>
         </figcaption>
-      </figure> <!-- /.staff -->
-      <figure class="staff">
-        <img src="/assets/img/pic-staff-david.jpg" alt="David Jones">
+      </figure> <!-- /.person -->
+      <figure class="person">
+        <img src="/assets/img/pic-person-david.jpg" alt="David Jones">
         <figcaption>
-          <h3 class="staff-name">David<br>Jones</h3>
-          <p class="staff-title">Assoc. Creative Director</p>
-          <p class="staff-hometown">Hometown, NC</p>
+          <h3 class="person-name">David<br>Jones</h3>
+          <p class="person-title">Assoc. Creative Director</p>
+          <p class="person-hometown">Hometown, NC</p>
         </figcaption>
-      </figure> <!-- /.staff -->
-      <figure class="staff">
-        <img src="/assets/img/pic-staff-gary.jpg" alt="Gary Bostwick">
+      </figure> <!-- /.person -->
+      <figure class="person">
+        <img src="/assets/img/pic-person-gary.jpg" alt="Gary Bostwick">
         <figcaption>
-          <h3 class="staff-name">Gary<br>Bostwick</h3>
-          <p class="staff-title">Senior Copywriter</p>
-          <p class="staff-hometown">Cleveland, OH</p>
+          <h3 class="person-name">Gary<br>Bostwick</h3>
+          <p class="person-title">Senior Copywriter</p>
+          <p class="person-hometown">Cleveland, OH</p>
         </figcaption>
-      </figure> <!-- /.staff -->
-      <figure class="staff">
-        <img src="/assets/img/pic-staff-ashley.jpg" alt="Ashley">
+      </figure> <!-- /.person -->
+      <figure class="person">
+        <img src="/assets/img/pic-person-ashley.jpg" alt="Ashley">
         <figcaption>
-          <h3 class="staff-name">Ashley<br>Lastname</h3>
-          <p class="staff-title">Account Executive</p>
-          <p class="staff-hometown">Hometown, NC</p>
+          <h3 class="person-name">Ashley<br>Lastname</h3>
+          <p class="person-title">Account Executive</p>
+          <p class="person-hometown">Hometown, NC</p>
         </figcaption>
-      </figure> <!-- /.staff -->
-      <figure class="staff">
-        <img src="/assets/img/pic-staff-anna.jpg" alt="Anna">
+      </figure> <!-- /.person -->
+      <figure class="person">
+        <img src="/assets/img/pic-person-anna.jpg" alt="Anna">
         <figcaption>
-          <h3 class="staff-name">Anna<br>Church</h3>
-          <p class="staff-title">Account Executive</p>
-          <p class="staff-hometown">Hometown, NC</p>
+          <h3 class="person-name">Anna<br>Church</h3>
+          <p class="person-title">Account Executive</p>
+          <p class="person-hometown">Hometown, NC</p>
         </figcaption>
-      </figure> <!-- /.staff -->
-    </div> <!-- /.staff-grid -->
+      </figure> <!-- /.person -->
+    </div> <!-- /.people-grid -->
   </section> <!-- /.people -->
 </div> <!-- /.people-wrapper -->
 
