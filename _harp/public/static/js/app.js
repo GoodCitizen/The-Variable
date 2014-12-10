@@ -1,5 +1,8 @@
 $(function() {
 
+  // Add Fastclick to remove 300ms delay on touch devices
+  FastClick.attach(document.body);
+
   // Hamburger menu icon
   $("#js-hamburger").click(function (e) {
     e.preventDefault();
