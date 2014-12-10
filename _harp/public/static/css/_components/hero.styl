@@ -17,11 +17,11 @@
   background url(../img/bg-texture.png)
 
 .hero
-  padding 70px 0 50px
+  padding 70px 0 100px
   background url(../img/bg-hero.png) 50% 12% no-repeat
   background-size 25px 14px
   @media (min-width: 43.75em)
-    padding 110px 0 70px
+    padding 110px 0
     background-size 60px 34px
   @media (min-width: 56.25em)
     padding 170px 0
@@ -123,6 +123,7 @@
   width 100%
   position absolute
   bottom 0
+  background #000
   // background #000 url(../img/bg-secret-sauce-wrapper.png) left bottom repeat-x
 
 .secret-sauce
@@ -174,12 +175,66 @@
 
 .secret-content
   // max-height 0
+  position relative // For positioning :before element
   display none
   overflow hidden
-  background #000
-  transition max-height 1s ease-in-out
+  background #000 url(../img/bg-secret-content.png) center no-repeat
+  background-size contain
+  // transition max-height 1s ease-in-out
   &.is-open
     // max-height 800px
-  .test-content
+  .col
+    padding 0
+    font-size 13px
+    font-family volkorn
+    font-style italic
+    line-height 1.35
+    text-align center
+    color #fff
+  .lead
     p
-      margin 0
+      padding 10px 0
+      font-size 18px
+      font-style normal
+      line-height 1
+      text-align center
+      color brand-gold
+      border 1px solid #fff
+      border-width 1px 0
+  @media (min-width: 43.75em)
+    padding 40px 0
+    &:before
+      content ''
+      margin-left -75px
+      width 150px
+      height 1px
+      display block
+      position absolute
+      top 0
+      left 50%
+      background brand-gold
+    .col
+      padding 0 20px
+      font-size 15px
+      text-align left
+    .lead
+      p
+        font-size 22px
+        line-height 1.25
+        text-align left
+  @media (min-width: 48em)
+    //
+  @media (min-width: 56.25em)
+    padding 90px 0
+    &:before
+      margin-left -150px
+      width 300px
+    .col
+      padding 0 40px
+      font-size 18px
+      line-height 1.75
+    .lead
+      p
+        padding 40px 0
+        font-size 33px
+        line-height 1.5
