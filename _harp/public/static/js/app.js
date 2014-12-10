@@ -6,9 +6,15 @@ $(function() {
     $(this).toggleClass("is-open");
   });
 
+  // Secret Sauce toggle button
+  $("#js-secret-toggle").click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass("is-toggled").next().slideToggle('fast')
+  });
+
   // Project list parallax
   if ($(window).width()>980 && !Modernizr.touch) {
-    
+
   }
 
   // Project videos
