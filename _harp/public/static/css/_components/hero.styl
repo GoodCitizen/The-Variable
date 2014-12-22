@@ -193,17 +193,20 @@
     color #fff
   p
     display none
-  .lead
-    p
-      padding 10px 0
-      display block
-      font-size 18px
-      font-style normal
-      line-height 2
-      text-align center
-      color brand-gold
-      border 1px solid #fff
-      border-width 1px 0
+  .lead-first,
+  .lead-second
+    margin-bottom 0
+    padding 10px 0
+    font-size 18px
+    font-style normal
+    line-height 2
+    text-align center
+    color brand-gold
+    border 1px solid #fff
+    border-width 1px 0
+  .lead-first
+    display block
+
   @media (min-width: 43.75em)
     padding 40px 0
     &:before
@@ -223,11 +226,12 @@
       text-align left
     p
       display block
-    .lead
-      p
-        font-size 19px
-        line-height 1.85
-        text-align left
+    .lead-first
+      display none
+    .lead-second
+      font-size 19px
+      line-height 1.85
+      text-align left
   @media (min-width: 56.25em)
     padding 90px 0
     &:before
@@ -237,8 +241,7 @@
       padding 0 30px
       font-size 17px
       line-height 2.25
-    .lead
-      p
-        padding 40px 0
-        font-size 25px
-        line-height 1.8
+    .lead-second
+      padding 40px 0
+      font-size 25px
+      line-height 1.8
